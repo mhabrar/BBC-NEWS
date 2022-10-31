@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC News</title>
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="shortcut icon" href="./css/assets/img/favicon.ico" type="image/x-icon">
+	
+</head>
+<body class="m-0 p-0 w-auto h-full">
+
+<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+	<div class="container flex flex-wrap justify-between items-center mx-auto">
+	<a href="https://bbcnews.com/" class="flex items-center">
+		<img src="./css/assets/img/logo.png" class="mr-3 h-6 sm:h-9" alt="BBC LOGO">
+		<span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">BBC NEWS</span>
+	</a>
+	<div class="flex md:order-2">
+	  <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
+		<svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+		<span class="sr-only">Search</span>
+	  </button>
+	  <div class="hidden relative md:block">
+		<div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+		  <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+		  <span class="sr-only">Search icon</span>
+		</div>
+		<input type="text" id="search-navbar" class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+	  </div>
+	  <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
+		<span class="sr-only">Open menu</span>
+		<svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+	  </button>
+	</div>
+	  <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-search">
+		<div class="relative mt-3 md:hidden">
+		  <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+			<svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+		  </div>
+		  <input type="text" id="search-navbar" class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+		</div>
+		<ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 gap-x-10">
+		  <li>
+			<a href="#" class="block py-2 pr-4 pl-3 text-white  rounded md:bg-transparent  md:p-0 dark:text-white" aria-current="page">Home</a>
+		  </li>
+		  <li>
+			<a href="#" class="block py-2 pr-4 pl-3 text-white  rounded md:bg-transparent  md:p-0 dark:text-white" aria-current="page">News</a>
+			   
+		  </li>
+		  <li>
+			<a href="#" class="block py-2 pr-4 pl-3 text-white  rounded md:bg-transparent  md:p-0 dark:text-white" aria-current="page">Sprots</a>
+		  </li>
+		  <li>
+			<a href="#" class="block py-2 pr-4 pl-3 text-white  rounded md:bg-transparent  md:p-0 dark:text-white" aria-current="page">Reel</a>
+		  </li>
+		 
+		  <li>
+			<a href="#" class="block py-2 pr-4 pl-3 text-white  rounded md:bg-transparent  md:p-0 dark:text-white" aria-current="page">Worklife</a>
+		  </li>
+		  <li>
+			<a href="#" class="block py-2 pr-4 pl-3 text-white  rounded md:bg-transparent  md:p-0 dark:text-white" aria-current="page">Future</a>
+		  </li>
+		  <li>
+			<a href="#" class="block py-2 pr-4 pl-3 text-white  rounded md:bg-transparent  md:p-0 dark:text-white" aria-current="page">Culture</a>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+  </nav>
+  <!-- END Nav Section -->
+
+  <section id="header">
+
+	<div class="flex justify-around w-full h-full bg-slate-200 mt-5">
+		<div>
+			<h1 class="text-6xl bg-red-600 text-white text-justify">Breaking news</h1>
+		</div>
+		<div class="text-red text-lg">
+			<img class="max-w-md h-auto" src="./css/assets/img/elon musk.webp" alt="">
+		</div>
+		<div>
+			<p class="leading-loose ml-4">Elon Musk Announces He Bought Twitter in $44 Billion Deal</p>
+			<p class="text-4xl ml-4" >Elon Musk</p>
+			<p class="text-8xl text-gray-900 ml-4">I Bought Twitter!!!</p>
+			<p class="ml-4">
+
+				<span class="text-4xl text-red-600">Elon Musk</span>  is officially Twitter's new daddy -- at least according to Elon Musk -- who says he hopes the platform will continue to be a digital town square for years to come.
+				
+				The Tesla/SpaceX boss explained his reasons for the $44 billion purchase Thursday, saying, "There is currently great danger that social media will splinter into far right wing and far left wing echo chambers that generate more hate and divide in our society."
+				
+				He continues, "In the relentless pursuit of clicks, much of traditional media has fueled and catered to those polarized extremes, as they believe that is what brings in the money, but, in doing so, the opportunity for dialogue is lost."
+				
+				He says, "That is why I bought Twitter. I didn't do it because it would be easy. I didn't do it to make more money. I did it to try to help humanity, whom I love. And I do so with humility, recognizing that failure in pursuing this goal, despite our best efforts, is a very real possibility."
+				
+				</p>
+				
+		</div>
+		<div>
+
+		</div>
+	  </div>
+  </section>
+  
+
+  <section class=" justify-between flex grid-cols-5">
+
+	
+<div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md text-black  mt-3 items-center">
+    <a href="#">
+        <img class="rounded-t-lg" src="./css/assets/img/psg 1200.jpg" alt="">
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black ">Messi Neymar briliant performance and psg get win. </h5>
+        </a>
+        <p class="mb-3 font-normal text-black ">This seasion psg new coach sing then psg get ply geeter then previese seasion MNM well play eache macth.</p>
+        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+            <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </a>
+    </div>
+</div>
+
+
+<div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md text-black  mt-3 items-center">
+    <a href="#">
+        <img class="rounded-t-lg" src="./css/assets/img/india.jpg" alt="">
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black ">India lost frist time in icc world cup 2022..... </h5>
+        </a>
+        <p class="mb-3 font-normal text-black ">India terget 134 in against south Africa ,Dabid milar well play in india then Africa win the macth.</p>
+        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+            <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </a>
+    </div>
+</div>
+
+
+<div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md text-black  mt-3 items-center">
+    <a href="#">
+        <img class="rounded-t-lg" src="./css/assets/img/pakistan.webp" alt="">
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black ">Pakistan Win against Nederland in icc t20 world cup  </h5>
+		</a>
+        <p class="mb-3 font-normal text-black ">This seasion psg new coach sing then psg get ply geeter then previese seasion MNM well play eache macth.</p>
+        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+            <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </a>
+    </div>
+</div>
+
+
+<div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md   mt-3">
+    <a href="#">
+        <img class="rounded-t-lg" src="./css/assets/img/man unt.jpg" alt="">
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">Man Utd winners and losers as Cristiano Ronaldo struggles but Marcus Rashford shines</h5>
+        </a>
+        <p class="mb-3 font-normal text-black">Man Utd win west hum united, Ronaldo cannot goal .</p>
+        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+            <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </a>
+    </div>
+</div>
+
+<div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md   mt-3">
+    <a href="#">
+        <img class="rounded-t-lg" src="./css/assets/img/bangla.jpg" alt="">
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">Bangladesh win a dramatic against zimbabue</h5>
+        </a>
+        <p class="mb-3 font-normal text-black">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+            <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </a>
+    </div>
+
+	<!-- <img src="./css/assets/img/indan news.webp" alt=""> -->
+
+  </section>
+
+<section class="w-full h-full">
+
+<div id="default-carousel" class="relative" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="">
+            <span class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+            <img src="./css/assets/img/p0d8n2x0.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
+            <img src="./css/assets/img/2nd slide.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+            <img src="./css/assets/img/3rd slide.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+        <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+</section>
+
+<script src="index.js"></script>
+</body>
+</html> 
